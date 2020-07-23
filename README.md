@@ -2,7 +2,7 @@
 
 All credit to https://github.com/Jean-MarcHarvengt/MCUME for the emulation software and https://www.pjrc.com/teensy/ for the hardware and libraries.
 
-For the fidelity of this simulation refer to the two larger photos at the end of the description of the repository Atari600XL-Upgrades https://github.com/TobiasVanDyk/Atari600XL-Upgrades, which shows a comparison of the real versus simulated Atari Graphics Mode 0
+For the fidelity of this simulation refer to the photo below, which compares an upgraded 600XL with the simulated Atari Graphics Mode 0 as presented here.
 <p align="center">
 <img src="real-simulated.png" width="940" />  
 <br>
