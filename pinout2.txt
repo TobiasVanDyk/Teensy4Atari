@@ -1,0 +1,46 @@
+Teensy 4.1 (2x24 pins) and Teensy 3.6 (2x24 pins) connection diagram  
+---------------------------------------------------------------------
+
+   (green) ST7789 DISPLAY - GND   GND X           VIn  +5v or Vusb - ST7789 DISPLAY Power (red)
+                           (NC)    00           x Ang  Teensy 4.1 GND (Teensy 3.6 Audio GND)
+                           (NC)    01           X 3.3v Breadboard V+
+               JOY1 Fire button    02 X         X 23   RST - ST7789 DISPLAY (red)
+                      Key USER1    03 X         X 22   CS  - ST7789 DISPLAY (white)
+                      Key USER2    04 X           21   
+               JOY1 Left button    05 X           20  
+              JOY1 Right button    06 X           19   
+               JOY1 Down button    07 X           18   
+                           (NC)    08           X 17   JOY2 Fire button
+    (white) ST7789 DISPLAY - DC    09 X           16   (NC) (JOY2 AnalogY-A2)
+   Audio MSQL Teensy 4.1 (OPT0)    10             15   (NC) (JOY2 AnalogX-A1)
+           (grey) ST7789 - MOSI    11 X         X 14   JOY1 Up button
+       ST7789 DISPLAY MISO (NC)    12           X 13   SCK - ST7789 DISPLAY (white)
+                           (NC)    3.3v           GND
+                           (NC)    24             DAC1 Audio R for Teensy 3.6  
+                           (NC)    25             DAC0 Audio L for Teensy 3.6  
+                           (NC)    26             39   (NC) Key USER4  
+                           (NC)    27             38    
+                           (NC)    28             37    
+                                   29             36    
+                                   30             35    
+                                   31             34    
+                                   32             33   (NC) Key USER3
+
+
+
+Display: ST7789 (on main SPI,  MISO not connected, RST optional or to 3.3v)
+Storage: SD build-in (or external SD requires extra CS + main SPI 11,12 and 13)
+
+(X) mandatory pins to connect for the minimum set-up (single joystick as JOY1 or JOY2 is possible via SWAP option)
+
+The keys (all) are using internal pull-up so just connect the other side to the GND
+The Analog joypad also needs VCC and GND connections !
+The Display pins: SDI,SCK,CS but also DC,VCC and GND must be connected
+
+Everything is powered over the USB connector of the Teensy!
+
+
+Display type in "tft_t_dma_config.h" 
+I/O config in "iopins.h"
+
+
