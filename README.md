@@ -6,7 +6,7 @@ I am currently experimenting with adding a standard usb keyboard to a Teensy 4.0
 
 The code (as inside the TeensyAtari folder), is functional for the Teensy 4.1, Teensy 4.0 and 3.6 (and tested running Atari Basic plus a number of games), but is still experimental. The display is an Adafruit ST7789 240x320 IPS display (https://learn.adafruit.com/2-0-inch-320-x-240-color-ips-tft-display).
 
-For the Teensy 4.0 the SDcard adapter on the display was used, and SDCS was connected to pin 8 (Teensy 4.0) and MISO to pin 12 (Teensy 4.0). The files required for this configuration is in the AtariTeensy folder. To use the Teensy 4.1 and Teensy 3.6 onboard SDCard select the required option in platform_config.h (comment out 
+For the Teensy 4.0 the SDcard adapter on the display was used, and SDCS was connected to pin 8 (Teensy 4.0) and MISO to pin 12 (Teensy 4.0). This is the configuration used in the TeensyAtari folder. To use the Teensy 4.1 and Teensy 3.6 onboard SDCard select the required option in platform_config.h (comment out 
 EXTERNAL_SD).
 
 ### Schematic 
