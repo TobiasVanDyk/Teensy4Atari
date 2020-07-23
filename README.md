@@ -2,6 +2,11 @@
 
 All credit to https://github.com/Jean-MarcHarvengt/MCUME for the emulation software and https://www.pjrc.com/teensy/ for the hardware and libraries.
 
+For the fidelity of this simulation refer to the two larger photos at the end of the description of the repository Atari600XL-Upgrades https://github.com/TobiasVanDyk/Atari600XL-Upgrades, which shows a comparison of the real versus simulated Atari Graphics Mode 0
+<p align="center">
+<img src="real-simulated.png" width="940" />  
+<br>
+
 I am currently experimenting with adding a standard usb keyboard to a Teensy 4.0 (first and second photos), Teensy 4.1 (third photo), and a Teensy 3.6 (fourth and fifth photos), using their onboard USB hubs. The Teensy 4.0 used the two bottom USB hub pins D- and D+, as well as an external SDCard adapter. My only interest currently is in modifying and developing the Atari 800/800XL emulations, in part because these are the only working original 1980's hardware (and original OSROMS), I have - also see https://github.com/TobiasVanDyk/Atari600XL-Upgrades.
 
 For the fidelity of this simulation refer to the two photos at the end of the description of the repository Atari600XL-Upgrades https://github.com/TobiasVanDyk/Atari600XL-Upgrades, which shows a comparison of the real versus simulated Atari Graphics Mode 0
