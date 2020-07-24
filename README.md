@@ -4,7 +4,7 @@ All credit to https://github.com/Jean-MarcHarvengt/MCUME for the emulation softw
 
 For the fidelity of this simulation refer to the photo below, which compares an upgraded 600XL with the simulated Atari Graphics Mode 0 as presented here.
 <p align="center">
-<img src="real-simulated.png" width="940" />  
+<img src="real-simulated.jpg" width="940" />  
 <br>
 
 I am currently experimenting with adding a standard usb keyboard to a Teensy 4.0 (first and second photos), Teensy 4.1 (third photo), and a Teensy 3.6 (fourth and fifth photos), using their onboard USB hubs. The Teensy 4.0 used the two bottom USB hub pins D- and D+, as well as an external SDCard adapter. My only interest currently is in modifying and developing the Atari 800/800XL emulations, in part because these are the only working original 1980's hardware (and original OSROMS), I have - also see https://github.com/TobiasVanDyk/Atari600XL-Upgrades.
@@ -18,18 +18,18 @@ EXTERNAL_SD).
 If the built-in SDCard of the Teensy 4.1 or 3.6 is used the the connections to pin 8 and pin 12 are not required. None of the joystick switches are essential as the ROM selection can be done using the usbkeyboard. For all three Teensy's the schematic is then as below, with all possible input and output devices:
 <br>
 <p align="center">
-<img src="schematic2.png" width="900" />  
+<img src="schematic2.jpg" width="900" />  
 <br>
   
 ### Testing (Teensy 4.0):
 <br>
 <p align="center">
-<img src="Teensy40a.png" width="840" />  
+<img src="Teensy40a.jpg" width="840" />  
 <br>
 
 <br>
 <p align="center">
-<img src="Teensy40b.png" width="840" />  
+<img src="Teensy40b.jpg" width="840" />  
 <br>
   
 ### Testing (Teensy 4.1):
