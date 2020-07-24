@@ -53,7 +53,7 @@ If the built-in SDCard of the Teensy 4.1 or 3.6 is used the the connections to p
 From https://learn.adafruit.com/2-0-inch-320-x-240-color-ips-tft-display:
 <br>
 <p align="center">
-<img src="Adafruit 2inch 320x240 Color IPS TFT Display.png" width="640" />  
+<img src="Adafruit 2inch 320x240 Color IPS TFT Display.jpg" width="640" />  
 <br>
 
 ### An alternative solution for the Teensy 4.0 SDCard: 
