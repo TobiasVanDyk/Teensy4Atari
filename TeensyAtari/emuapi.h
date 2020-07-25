@@ -7,6 +7,8 @@
 #define CUSTOM_SND  1
 //#define TIMER_REND  1
 #define EXTRA_HEAP  0x10
+//#define HAS_ANALOG_JOY 1
+
 // Title:     <                        >
 
 #define ROMSDIR "800"             // This is for Atari 800/800XL only used in emuapi.cc 4 times
@@ -47,6 +49,8 @@
 #define MASK_JOY1_DOWN  0x0800
 #define MASK_JOY1_BTN   0x1000
 #define MASK_KEY_USER4  0x2000
+
+
 
 extern void emu_init(void);
 extern void emu_printf(char * text);
