@@ -12,7 +12,7 @@ I have added a standard usb keyboard as an input device to the MCUME emulator, f
 The code (as inside the Teensy40Atari and Teensy41Atari folders), is fully functional - including working sound - for the Teensy 4.1, and 3.6, and partly functional for the Teensy 4.0 - it still needs to have its sound enabled. All were tested running Atari Basic plus a number of games. The display is an [**Adafruit ST7789 240x320 IPS display**](https://learn.adafruit.com/2-0-inch-320-x-240-color-ips-tft-display), which also has an SDCard holder, used for the Teensy 4.0.
 
 As mentioned, for the Teensy 4.0 the SDcard adapter on the display was used, and SDCS was connected to pin 8 (Teensy 4.0) and MISO to pin 12 (Teensy 4.0). This is the configuration as used in the Teensy40Atari folder. To use the Teensy 4.1 and Teensy 3.6 onboard SDCard select the required option in platform_config.h (comment out 
-EXTERNAL_SD), which is the configuration used in the Teensy41tari folder.
+EXTERNAL_SD), which is the configuration used in the Teensy41Atari folder.
 
 ### Schematic 
 If the built-in SDCard of the Teensy 4.1 or 3.6 is used the the connections to pin 8 and pin 12 are not required. None of the joystick switches are essential as the ROM selection can be done using the usbkeyboard. For all three Teensy's the schematic is then as below, with all possible input and output devices:
@@ -69,6 +69,8 @@ From [**PZ1-6502-Laptop**](https://hackaday.io/project/171471-pz1-6502-laptop):
 **To do 2**: **Sound on the Teensy 4.1 using its built-in SDcard is working (BASIC: SOUND 2,100,10,10).** 
 
 *But when using  an external SDCard for both the 4.0 and 4.1 the sound is not working. I have changed as suggested the #define PIN_SPI_SS (10) to (22) and also tried (8) in pins_arduino.h in the teensy4 folder, but there is still no MQSR output from pin 10.*
+
+*As an alternative it is possible to connect the Teensy 4.0 bottom USBhub connectors to an external SDCard (see photo above), which will solve the sound problem.*
 
 ### Teensy 4.1 playing sound:
 
