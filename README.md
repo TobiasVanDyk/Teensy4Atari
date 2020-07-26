@@ -15,6 +15,7 @@ For the Teensy 4.0 the SDcard adapter on the display was used, and SDCS was conn
 EXTERNAL_SD).
 
 **Todo 1**: *Define, Break, Reset keys properly - all other usb keyboard keys are now working as they should.*
+
 **Todo 2**: *Sound on the Teensy 4.x is not working. I have changed as suggested the #define PIN_SPI_SS (10) to (22) and also tried (8) in pins_arduino.h in the teensy4 folder, but there is still no MQSR output from pin 10.*
 
 ### Schematic 
