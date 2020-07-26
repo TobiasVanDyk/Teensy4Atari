@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////////////////
-// Atari 800 emulation using a Teensy 4.0's own hub and standard USB keyboard for input. 
+// Atari 800 emulation using a Teensy 4.1's own hub and standard USB keyboard for input. 
 // This is a modification of Jean-MarcHarvengt's Multi CompUter Machine Emulator.
 /////////////////////////////////////////////////////////////////////////////////////////////
 // Teensy 4.1 using built-in SDCard
