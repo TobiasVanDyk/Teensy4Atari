@@ -16,7 +16,8 @@ EXTERNAL_SD).
 
 **To do 1**: *Define, Break, Reset keys properly - all other usb keyboard keys are now working as they should.*
 
-**To do 2**: *Sound on the Teensy 4.x is not working. I have changed as suggested the #define PIN_SPI_SS (10) to (22) and also tried (8) in pins_arduino.h in the teensy4 folder, but there is still no MQSR output from pin 10.*
+**To do 2**: **Sound on the Teensy 4.1 using its built-in SDcard is working (BASIC: SOUND 2,100,10,10).** 
+*But when using  an external SDCard for both the 4.0 and 4.1 the sound is not working. I have changed as suggested the #define PIN_SPI_SS (10) to (22) and also tried (8) in pins_arduino.h in the teensy4 folder, but there is still no MQSR output from pin 10.*
 
 ### Schematic 
 If the built-in SDCard of the Teensy 4.1 or 3.6 is used the the connections to pin 8 and pin 12 are not required. None of the joystick switches are essential as the ROM selection can be done using the usbkeyboard. For all three Teensy's the schematic is then as below, with all possible input and output devices:
