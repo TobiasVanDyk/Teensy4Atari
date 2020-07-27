@@ -9,7 +9,7 @@ For the fidelity of this simulation refer to the photo below, which compares an 
 
 I have added a standard usb keyboard as an input device to the MCUME emulator, for a Teensy 4.0 with a external SDCard (first and second photos below), Teensy 4.1 using either its built-in SDCard (third photo), or an external SDCard, and a Teensy 3.6 using its built-in SDCard (fourth and fifth photos), where the USB keyboard is attached to their onboard USB hubs. The Teensy 4.0 used the two bottom USB hub pins D- and D+ and +5v for Vusb, for the hub. I intend to further modify and develop the Atari 800/800XL emulations in the future, in part because these are the only working original 1980's hardware (and original OS-ROMs), I have - also see [**Atari600XL-Upgrades**](https://github.com/TobiasVanDyk/Atari600XL-Upgrades). An obvious example for the future is to add support for a usb game controller or a usb joystick.
 
-The code (as inside the Teensy40Atari and Teensy41Atari folders), is fully functional - including working sound - for the Teensy 4.1, and 3.6, and partly functional for the Teensy 4.0 - it still needs to have its sound enabled. All were tested running Atari Basic plus a number of games. The display is an [**Adafruit ST7789 240x320 IPS display**](https://learn.adafruit.com/2-0-inch-320-x-240-color-ips-tft-display), which also has an SDCard holder, used for the Teensy 4.0.
+The code (as inside the Teensy40Atari and Teensy41Atari folders), is fully functional - including working sound - for the Teensy 4.0, 4.1, and 3.6. For the Teensy 4.0 use the standard Arduino SD library when compiling - when using the Teensy library the sound will not work. All were tested running Atari Basic plus a number of games. The display is an [**Adafruit ST7789 240x320 IPS display**](https://learn.adafruit.com/2-0-inch-320-x-240-color-ips-tft-display), which also has an SDCard holder, used for the Teensy 4.0.
 
 As mentioned, for the Teensy 4.0 the SDcard adapter on the display was used, and SDCS was connected to pin 8 (Teensy 4.0) and MISO to pin 12 (Teensy 4.0). This is the configuration as used in the Teensy40Atari folder. To use the Teensy 4.1 and Teensy 3.6 onboard SDCard select the required option in platform_config.h (comment out 
 EXTERNAL_SD), which is the configuration used in the Teensy41Atari folder.
@@ -59,9 +59,5 @@ From [**PZ1-6502-Laptop**](https://hackaday.io/project/171471-pz1-6502-laptop):
 
 **To do 1**: *Define, Break, Reset keys properly - all other usb keyboard keys are now working as they should.*
 
-**To do 2**: **Sound on the Teensy 4.1 using its built-in SDcard is working (BASIC: SOUND 2,100,10,10).** 
-
-*But when using  an external SDCard for both the 4.0 and 4.1 the sound is not working. I have changed as suggested the #define PIN_SPI_SS (10) to (22) and also tried (8) in pins_arduino.h in the teensy4 folder, but there is still no MQSR output from pin 10.*
-
-*As an alternative it is possible to connect the Teensy 4.0 bottom USBhub connectors to an external SDCard (see photo above), which will solve the sound problem.*
+**To do 2**: *Add usb game controller or usb joystick as input device.*
 
