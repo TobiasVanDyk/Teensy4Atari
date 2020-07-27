@@ -49,8 +49,8 @@ const uint8_t SD_CS_PIN = SDCARD_SS_PIN;
 
 static SdFat SD;
 #else
-#include <SD.h>
-#endif
+#include <SD.h>   // For Teensy 4.0 only make sure the standard Arduino SD library is used
+#endif            // The Teensy SD library breaks the sound for the Teensy 4.0
 static File file;
 #endif
 
