@@ -57,7 +57,5 @@ From [**PZ1-6502-Laptop**](https://hackaday.io/project/171471-pz1-6502-laptop):
 <br>
 
 
-**To do 1**: *Define, Break, Reset keys properly - all other usb keyboard keys are now working as they should.*
-
-**To do 2**: *Add usb game controller or usb joystick as input device.*
+**To do 1**: *Add usb game controller or usb joystick as input device.*
 
