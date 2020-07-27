@@ -24,29 +24,22 @@ If the built-in SDCard of the Teensy 4.1 or 3.6 is used the the connections to p
 ### Testing (Teensy 4.0):
 <br>
 <p align="center">
-<img src="Teensy40a.jpg" width="840" />  
-<br>
-
-<br>
-<p align="center">
-<img src="Teensy40b.jpg" width="840" />  
+<img src="Teensy40a.jpg" width="400" />  
+<img src="Teensy40b.jpg" width="400" />  
 <br>
   
 ### Testing (Teensy 4.1):
 <br>
 <p align="center">
-<img src="photo4a.jpg" width="840" />  
+<img src="photo4a.jpg" width="400" /> 
+<img src="Teensy41Sound.jpg" width="400" />   
 <br>
   
 ### Testing (Teensy 3.6):
 <br>
 <p align="center">
-<img src="photo1a.jpg" width="840" />  
-<br>
-
-<br>
-<p align="center">
-<img src="photo3a.jpg" width="840" />  
+<img src="photo1a.jpg" width="400" />  
+<img src="photo3a.jpg" width="400" />  
 <br>
 
 ### Adafruit ST7789 240x320 IPS display 
@@ -72,9 +65,3 @@ From [**PZ1-6502-Laptop**](https://hackaday.io/project/171471-pz1-6502-laptop):
 
 *As an alternative it is possible to connect the Teensy 4.0 bottom USBhub connectors to an external SDCard (see photo above), which will solve the sound problem.*
 
-### Teensy 4.1 playing sound:
-
-<br>
-<p align="center">
-<img src="Teensy41Sound.jpg" width="940" />  
-<br>
