@@ -18,7 +18,7 @@ EXTERNAL_SD), which is the configuration used in the Teensy41Atari folder.
 If the built-in SDCard of the Teensy 4.1 or 3.6 is used the the connections to pin 8 and pin 12 are not required. None of the joystick switches are essential as the ROM selection can be done using the usbkeyboard. For all three Teensy's the schematic is then as below, with all possible input and output devices, except the analog joystick:
 <br>
 <p align="center">
-<img src="schematic2.jpg" width="900" />  
+<img src="schematic2.jpg" width="800" />  
 <br>
   
 ### Testing (Teensy 4.0):
@@ -46,7 +46,7 @@ If the built-in SDCard of the Teensy 4.1 or 3.6 is used the the connections to p
 From [**Adafruit**](https://learn.adafruit.com/2-0-inch-320-x-240-color-ips-tft-display):
 <br>
 <p align="center">
-<img src="Adafruit 2inch 320x240 Color IPS TFT Display.jpg" width="640" />  
+<img src="Adafruit 2inch 320x240 Color IPS TFT Display.jpg" width="540" />  
 <br>
 
 ### An alternative solution for the Teensy 4.0 SDCard: 
