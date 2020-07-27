@@ -3,8 +3,8 @@
 // This is a modification of Jean-MarcHarvengt's Multi CompUter Machine Emulator.
 /////////////////////////////////////////////////////////////////////////////////////////////
 // Teensy 4.0 using external SDCard in display
-// Sound is not working 
-// Tried to change pins_arduino.h in teensy4 folder, PIN_SPI_SS = (8), (22) etc - was at (10) 
+// Sound is working but compile using the Arduino SD library and not the Teensy library 
+// Remove the Teensy SD library for working sound 
 ////////////////////////////////////////////////////////////////////////////////////////////
 #include "USBHost_t36.h"
 
