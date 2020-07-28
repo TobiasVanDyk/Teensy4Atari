@@ -300,6 +300,7 @@ int emu_ReadKeys(void)
 
   //////////////////////////////////////////////////
   // Reset procedure T3.X and T4.0 by Frank Boesing
+  // sleep mode with interrupt wake up
   //////////////////////////////////////////////////
   if ( ((retval & (MASK_KEY_USER1+MASK_KEY_USER2)) == (MASK_KEY_USER1+MASK_KEY_USER2)) || (retval & MASK_KEY_USER4 ) )
   { emu_printf("Reset Teensy.... ");  
@@ -332,10 +333,10 @@ int emu_ReadKeys(void)
     while (!(SNVS_LPCR & 0x02));
     
     SNVS_LPCR |= (1 << 6); // turn off power
-    while (1) asm("wfi");  
-#else
-    *(volatile uint32_t *)0xE000ED0C = 0x5FA0004;
-    while (true) {  ;    } 
+    while (1) asm("wfi");                         // sleep mode with interrupt wake up 
+#else                                             // Could also do: 
+    *(volatile uint32_t *)0xE000ED0C = 0x5FA0004; // #define sleep_cpu()  asm("wfi")
+    while (true) {  ;    }                        // asm("bkpt #251") reboot to boot code 
 #endif 
   }
   
