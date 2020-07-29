@@ -15,7 +15,7 @@ As mentioned, for the Teensy 4.0 the SDcard adapter on the display was used, and
 EXTERNAL_SD), which is the configuration used in the Teensy41Atari folder.
 
 ### Schematic 
-If the built-in SDCard of the Teensy 4.1 or 3.6 is used the the connections to pin 8 and pin 12 are not required. None of the joystick switches are essential as the ROM selection can be done using the usbkeyboard. For all three Teensy's the schematic is then as below, with all possible input and output devices, except the analog joystick:
+If the built-in SDCard of the Teensy 4.1 or 3.6 is used the the connections to pin 8 and pin 12 are not required. None of the joystick switches are essential as the ROM selection can be done using the usbkeyboard. For all three Teensy's the schematic is then as below (except Teensy 3.6 has two DAC-based Audio outputs - refer to pinout2.txt), with all possible input and output devices, except the analog joystick:
 <br>
 <p align="center">
 <img src="schematic2.jpg" width="800" />  
