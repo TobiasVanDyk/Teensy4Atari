@@ -4,7 +4,7 @@ All credit to [**MCUME**](https://github.com/Jean-MarcHarvengt/MCUME) for the em
 
 For the fidelity of this simulation refer to the photo below, which compares an upgraded 600XL with the simulated Atari Graphics Mode 0 as presented here.
 <p align="center">
-<img src="real-simulated.jpg" width="940" />  
+<img src="images/real-simulated.jpg" width="940" />  
 <br>
 
 A standard usb keyboard has been added as an input device to the MCUME emulator, for a Teensy 4.0 with a external SDCard (first and second photos below), Teensy 4.1 using either its built-in SDCard (third photo), or an external SDCard, and a Teensy 3.6 using its built-in SDCard (fourth and fifth photos), where the USB keyboard is attached to their onboard USB hubs. The Teensy 4.0 used the two bottom USB hub pins D- and D+, and +5v for Vusb, for the usb hub. The intention is to further modify and develop the Atari 800/800XL emulation codebase, in part because these are the only working original 1980's hardware (and original OS-ROMs), I have - also see [**Atari600XL-Upgrades**](https://github.com/TobiasVanDyk/Atari600XL-Upgrades). An obvious example for this would be to add support for a usb game controller or a usb joystick.
@@ -18,42 +18,42 @@ EXTERNAL_SD), which is the configuration used in the Teensy41Atari folder.
 If the built-in SDCard of the Teensy 4.1 or 3.6 is used the the connections to pin 8 and pin 12 are not required. None of the joystick switches are essential as the ROM selection can be done using the usbkeyboard. For all three Teensy nodels the schematic is as below - except (1) Teensy 3.6 has two DAC-based Audio outputs - refer to pinout2.txt, (2) Teensy 4.0 Pin 8 connected to Display SDCard CS, and (3) Teensy 4.0 footprint stops at pin 12 in the schematics, and continues with pin 13 on the other side. All possible input and output devices are shown except those mentioned in the previous sentence, and except the analog joystick:
 <br>
 <p align="center">
-<img src="schematic.jpg" width="800" />  
+<img src="images/schematic.jpg" width="800" />  
 <br>
   
 ### Testing (Teensy 4.0):
 <br>
 <p align="center">
-<img src="Teensy40a.jpg" width="400" />  
-<img src="Teensy40b.jpg" width="400" />  
+<img src="images/Teensy40a.jpg" width="400" />  
+<img src="images/Teensy40b.jpg" width="400" />  
 <br>
   
 ### Testing (Teensy 4.1):
 <br>
 <p align="center">
-<img src="photo4a.jpg" width="400" /> 
-<img src="Teensy41Sound.jpg" width="400" />   
+<img src="images/photo4a.jpg" width="400" /> 
+<img src="images/Teensy41Sound.jpg" width="400" />   
 <br>
   
 ### Testing (Teensy 3.6):
 <br>
 <p align="center">
-<img src="photo1a.jpg" width="400" />  
-<img src="photo3a.jpg" width="400" />  
+<img src="images/photo1a.jpg" width="400" />  
+<img src="images/photo3a.jpg" width="400" />  
 <br>
 
 ### Adafruit ST7789 240x320 IPS display 
 From [**Adafruit**](https://learn.adafruit.com/2-0-inch-320-x-240-color-ips-tft-display):
 <br>
 <p align="center">
-<img src="Adafruit 2inch 320x240 Color IPS TFT Display.jpg" width="540" />  
+<img src="images/Adafruit 2inch 320x240 Color IPS TFT Display.jpg" width="540" />  
 <br>
 
 ### An alternative solution for the Teensy 4.0 SDCard: 
 From [**PZ1-6502-Laptop**](https://hackaday.io/project/171471-pz1-6502-laptop):
 <br>
 <p align="center">
-<img src="teensynano6502.jpg" width="640" />  
+<img src="images/teensynano6502.jpg" width="640" />  
 <br>
 
 
