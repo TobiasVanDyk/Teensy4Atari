@@ -7,13 +7,15 @@ For the fidelity of this simulation refer to the photo below, which compares an 
 <img src="images/real-simulated.jpg" width="940" />  
 <br>
 
-A standard usb keyboard has been added (also refer to [**FrankB**](https://github.com/FrankBoesing/Teensy64) [**Link1**](https://github.com/FrankBoesing/Teensy64/blob/master/Teensy64/keyboard_usb.cpp) and [**Link2**](https://github.com/FrankBoesing/Teensy64/blob/master/Teensy64/keyboard_usb.h), for a much cleaner usbkeyboard  implementation but for a C64 emulator), as an input device to the MCUME emulator, for a:
+A standard usb keyboard has been added, as the main input device to the MCUME emulator, for a:
 
 * (1) **Teensy 4.0 with a external SDCard** (first and second photos below), 
 * (2) **Teensy 4.1 using either its built-in SDCard (third photo), or an external SDCard**, and a 
 * (3) **Teensy 3.6 using its built-in SDCard** (fourth and fifth photos), 
 
 where the USB keyboard is attached to their onboard USB hubs. The Teensy 4.0 used the two bottom USB hub pins D- and D+, and +5v for Vusb, for the usb hub. The intention is to further modify and develop the Atari 800/800XL emulation codebase, in part because these are the only working original 1980's hardware (and original OS-ROMs), I have - also see [**Atari600XL-Upgrades**](https://github.com/TobiasVanDyk/Atari600XL-Upgrades). An obvious example for this would be to add support for a usb game controller or a usb joystick.
+
+For a much cleaner usb keyboard implementation (but for a C64 emulator), refer to [**FrankB**](https://github.com/FrankBoesing/Teensy64) [**link 1**](https://github.com/FrankBoesing/Teensy64/blob/master/Teensy64/keyboard_usb.cpp) and [**link 2**](https://github.com/FrankBoesing/Teensy64/blob/master/Teensy64/keyboard_usb.h).
 
 The code (as inside the Teensy40Atari and Teensy41Atari folders), is fully functional - including working sound - for the Teensy 4.0, 4.1, and 3.6. For the Teensy 4.0 use the standard Arduino SD library when compiling. If the Teensy SD library is used for the Teensy 4.0 with an external SDCard, the sound will not function. All were tested running Atari Basic plus a number of games. The display is an [**Adafruit ST7789 240x320 IPS display**](https://learn.adafruit.com/2-0-inch-320-x-240-color-ips-tft-display), which also has an SDCard holder, used for the Teensy 4.0.
 
