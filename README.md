@@ -7,11 +7,11 @@ For the fidelity of this simulation refer to the photo below, which compares an 
 <img src="images/real-simulated.jpg" width="940" />  
 <br>
 
-A standard usb keyboard has been added, as the main input device to the MCUME emulator, for a:
+A standard usb keyboard has been added, as the main input device to the MCUME emulator, for a
 
-* (1) **Teensy 4.0 with a external SDCard** (first and second photos below), 
-* (2) **Teensy 4.1 using either its built-in SDCard (third photo), or an external SDCard**, and a 
-* (3) **Teensy 3.6 using its built-in SDCard** (fourth and fifth photos), 
+* **Teensy 4.0 with a external SDCard** (first and second photos below), 
+* **Teensy 4.1 using either its built-in SDCard (third photo), or an external SDCard**, and a 
+* **Teensy 3.6 using its built-in SDCard** (fourth and fifth photos), 
 
 where the USB keyboard is attached to their onboard USB hubs. The Teensy 4.0 used the two bottom USB hub pins D- and D+, and +5v for Vusb, for the usb hub. The intention is to further modify and develop the Atari 800/800XL emulation codebase, in part because these are the only working original 1980's hardware (and original OS-ROMs), I have - also see [**Atari600XL-Upgrades**](https://github.com/TobiasVanDyk/Atari600XL-Upgrades). An obvious example for this would be to add support for a usb game controller or a usb joystick.
 
