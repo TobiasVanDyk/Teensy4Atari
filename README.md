@@ -56,6 +56,24 @@ From [**Adafruit**](https://learn.adafruit.com/2-0-inch-320-x-240-color-ips-tft-
 <p align="center">
 <img src="images/Adafruit 2inch 320x240 Color IPS TFT Display.jpg" width="540" />  
 <br>
+  
+[**ElectroDragon (EDS) LCD Displays SPI SD-Card Touch Size 1.8 to 4.0 inches**](https://www.electrodragon.com/product/eds-tft-lcd-lcm-spi-interface-variable1-82-2/)
+
+The EDS 2.2" and 2.4" and 2.8" and 3.2" inch displays are ILI9341 at 320x240. Only the 2.2" has no resistive touch overlay.
+
+**2.4 inch Model 320x240:** 
+Top and bottom and schematic:
+<p align="left">
+<img src="images/ili9341c.jpg" width="350" />  
+<img src="images/ili9341d.jpg" width="350" /> 
+<br>
+The SDCard as configured on this model will not function when interfaced with a 3v3 MCU. To correct it, replace the 3 x 1k series resistors R1, R2, R3 with 0 ohm resistors or a solder bridge. Also connect SD-CS to a 10k resistor pullup to 3v3.
+  
+**Using the EDS ILI9341 display with the Teensy4Atari:**
+<p align="left">
+<img src="images/ili9341a.jpg" width="350" />  
+<img src="images/ili9341b.jpg" width="350" /> 
+<br>
 
 ### An alternative solution for the Teensy 4.0 SDCard: 
 From [**PZ1-6502-Laptop**](https://hackaday.io/project/171471-pz1-6502-laptop):
